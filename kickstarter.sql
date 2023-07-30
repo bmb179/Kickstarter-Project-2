@@ -23,7 +23,7 @@ SELECT COUNT(*) FROM [kickstarter]; --374,853 rows
 SELECT * FROM [kickstarter]
 WHERE [Launched] < CAST('2018-1-1 00:00:00' AS DATETIME)
 ORDER BY [Launched] DESC;
---filter out limited data from the first week of Jan 2018
+--filter out limited data from the first week of Jan 2018, used as the native query in the PBIX file
 
 SELECT COUNT(*) FROM [kickstarter]
 WHERE [Launched] < CAST('2018-1-1 00:00:00' AS DATETIME); --374,729 rows
